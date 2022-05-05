@@ -10,21 +10,21 @@ export default props => {
       transparent={true}>
       <View style={styles.frame}>
         <View style={styles.container}>
-          <Text style={styles.title}>Selecione o Nível: ^-^</Text>
+          <Text style={styles.title}>Selecione o Nível: *-* </Text>
           <TouchableOpacity
             style={[styles.button, styles.bgEasy]}
             onPress={() => props.onLevelSelected(0.1)}>
-            <Text style={styles.buttonLabel}> Filhote</Text>
+            <Text style={styles.buttonLabel}> Filhote </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.button, styles.bgNormal]}
             onPress={() => props.onLevelSelected(0.2)}>
-            <Text style={styles.buttonLabel}> Adolescente</Text>
+            <Text style={styles.buttonLabel}> Adolescente </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.button, styles.bgHard]}
             onPress={() => props.onLevelSelected(0.3)}>
-            <Text style={styles.buttonLabel}> Adulto</Text>
+            <Text style={styles.buttonLabel}> Adulto </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.6)',
   },
   container: {
-    backgroundColor: '#EEE',
+    backgroundColor: '#eeaaaa',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 15,

@@ -54,6 +54,7 @@ export default class App extends Component {
 
   onOpenField = (row, column) => {
     const board = cloneBoard(this.state.board);
+
     openField(board, row, column);
     const lost = hadExplosion(board);
     const won = wonGame(board);

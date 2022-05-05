@@ -21,14 +21,22 @@ export default props => {
         </TouchableOpacity>
         <Text style={styles.flagsLeft}> = {props.flagsLeft}</Text>
       </View>
-      <TouchableOpacity style={styles.button} onPress={props.onNewGame}>
-        <Text style={styles.buttonLabel}>Novo Jogo ^-^</Text>
-      </TouchableOpacity>
+      <View style={styles.container2}>
+        <Text style={styles.kittyStyle}>KittyMines!</Text>
+        <TouchableOpacity style={styles.button} onPress={props.onNewGame}>
+          <Text style={styles.buttonLabel}>Novo Jogo ^-^</Text>
+        </TouchableOpacity>
+      </View>
     </ImageBackground>
   );
 };
 
 const styles = StyleSheet.create({
+  container2: {
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   container: {
     flex: 2,
     flexDirection: 'row',
@@ -59,6 +67,12 @@ const styles = StyleSheet.create({
   buttonLabel: {
     fontSize: 20,
     color: '#f0cede',
+    fontWeight: 'bold',
+  },
+  kittyStyle: {
+    fontSize: 25,
+    color: '#ff007b',
+    padding: 2,
     fontWeight: 'bold',
   },
 });
